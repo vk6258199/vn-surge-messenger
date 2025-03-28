@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CTASection = () => {
   return (
@@ -18,10 +19,12 @@ const CTASection = () => {
               conquer their email marketing goals with unparalleled precision and creativity.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="gap-2">
-                <Download className="h-5 w-5" />
-                Download Now
-              </Button>
+              <Link to="/thank-you">
+                <Button size="lg" className="gap-2">
+                  <Download className="h-5 w-5" />
+                  Download Now
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="group">
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
